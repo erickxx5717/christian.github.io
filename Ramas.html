@@ -1,0 +1,272 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ramas - Revista de Química, Matemáticas y Fútbol</title>
+    <style>
+        /* Estilos básicos */
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #009688;
+            color: white;
+            text-align: center;
+            padding: 20px;
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 3rem;
+        }
+
+        header p {
+            font-size: 1.2rem;
+        }
+
+        nav {
+            background-color: #004d40;
+            padding: 10px;
+        }
+
+        nav ul {
+            list-style: none;
+            text-align: center;
+        }
+
+        nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+
+        section {
+            padding: 20px;
+        }
+
+        h2 {
+            font-size: 2rem;
+            color: #333;
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        #portada {
+            background-color: #e0f7fa;
+            padding: 50px 20px;
+            text-align: center;
+        }
+
+        .portada-content {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+        }
+
+        .portada-content img {
+            width: 300px;
+            height: auto;
+            border-radius: 15px;
+        }
+
+        .portada-text h3 {
+            font-size: 1.5rem;
+            color: #00695c;
+        }
+
+        .portada-text p {
+            font-size: 1rem;
+            color: #004d40;
+        }
+
+        /* Sección de artículos */
+        #articulos {
+            background-color: #ffffff;
+        }
+
+        .articulos-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+            margin-top: 20px;
+        }
+
+        .articulos-grid article {
+            background-color: #eeeeee;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+
+        .articulos-grid article h3 {
+            color: #009688;
+            font-size: 1.3rem;
+        }
+
+        .articulos-grid article p {
+            font-size: 1rem;
+            color: #333;
+        }
+
+        /* Sección Nosotros */
+        #nosotros {
+            background-color: #f1f8e9;
+        }
+
+        #nosotros ul {
+            list-style: none;
+            text-align: center;
+            padding: 0;
+        }
+
+        #nosotros ul li {
+            margin: 10px 0;
+        }
+
+        /* Sección de Suscripción */
+        #suscripcion {
+            background-color: #b2dfdb;
+            text-align: center;
+        }
+
+        #suscripcion form {
+            display: inline-block;
+            margin-top: 20px;
+        }
+
+        #suscripcion input[type="email"] {
+            padding: 10px;
+            font-size: 1rem;
+            border-radius: 5px;
+            border: none;
+        }
+
+        #suscripcion button {
+            padding: 10px 20px;
+            background-color: #00796b;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1rem;
+        }
+
+        #suscripcion button:hover {
+            background-color: #004d40;
+        }
+
+        /* Footer */
+        footer {
+            background-color: #004d40;
+            color: white;
+            text-align: center;
+            padding: 10px 0;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <img src="LOGO.png"></img>
+            <p>Donde la ciencia, los números y el mundo se encuentran</p>
+        </div>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="#portada">Portada</a></li>
+            <li><a href="#carta-editor">Carta del Editor</a></li>
+            <li><a href="#articulos">Artículos</a></li>
+            <li><a href="#nosotros">Nosotros</a></li>
+            <li><a href="#suscripcion">Suscripción</a></li>
+        </ul>
+    </nav>
+
+    <section id="portada">
+        <h2>Portada</h2>
+        <div class="portada-content">
+            <img src="LOGO CHIQUITO.png" alt="Portada de la revista Ramas">
+            <div class="portada-text">
+                <h3>El poder de la ciencia en el mundo</h3>
+                <p>Descubre cómo la química, las matemáticas y fisica están presentes en cada minuto de tu vida.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="carta-editor">
+        <h2>Carta del Editor</h2>
+        <p>¡Bienvenidos a <strong>Ramas</strong>! Esta revista ha sido creada para estudiantes curiosos que quieren explorar la ciencia y los números de una forma divertida y aplicada a su día a día, incluyendo el mejor apredisaje del mundo.</p>
+        <p>Nuestro objetivo es mostrarte que la química y las matemáticas están en todas partes, incluso en la vida cotidiana ¡Esperamos que disfrutes este viaje de aprendizaje!</p>
+    </section>
+
+    <section id="articulos">
+        <h2>Artículos Destacados</h2>
+        <div class="articulos-grid">
+            <article>
+                <h3>Química en la Cocina: Las Reacciones que Transforman Tus Ingredientes</h3>
+                <p>La cocina es un espacio donde ocurren cientos de reacciones químicas que transforman los ingredientes en algo completamente nuevo. Aquí te mostramos algunas de las más comunes:
+                    Reacción de Maillard: 
+                    Esta es la responsable de que tus alimentos adquieran ese color dorado y delicioso cuando los cocinas. Al calentar alimentos ricos en proteínas y azúcares (como la carne o el pan), estos se combinan a altas temperaturas, creando compuestos que le dan a los alimentos un sabor único. La química detrás de esta reacción es fundamental en la cocina.
+
+Fermentación: 
+Si alguna vez has hecho pan o yogurt en casa, has sido testigo de un proceso químico llamado fermentación. En este proceso, las bacterias o levaduras consumen los azúcares y los transforman en gases (dióxido de carbono) y otros productos, lo que le da esponjosidad al pan o acidez al yogurt. ¡Todo gracias a la química!
+
+Emulsión: 
+Cuando haces una mayonesa o un aderezo cremoso, estás creando una emulsión, una mezcla donde normalmente el agua y el aceite no se combinarían, pero gracias a la lecitina del huevo, por ejemplo, se estabilizan y se fusionan. Este es otro fenómeno químico que hace posible algunos de tus alimentos favoritos.
+
+</p>
+            </article>
+            <article>
+                <h3>Matemáticas en las Recetas: Proporciones y Conversiones</h3>
+                <p>Imagina que quieres hacer un pastel, pero la receta está diseñada para 12 personas y tú solo necesitas preparar la mitad. ¿Cómo lo haces sin arruinar las proporciones? Aquí es donde las matemáticas entran en juego.
+
+Fracciones y Proporciones: Al ajustar una receta, estás usando fracciones. Si la receta requiere 500 gramos de harina, pero solo necesitas la mitad, simplemente divides entre dos. Este principio de fracciones se aplica en todos los ingredientes: harina, azúcar, huevos, etc.
+
+Conversión de Unidades: Muchas veces, las recetas utilizan diferentes unidades de medida, como onzas, gramos o tazas. Las conversiones matemáticas te permiten pasar de un sistema a otro. Por ejemplo, saber que 1 taza de harina equivale a 120 gramos es clave cuando sigues recetas de diferentes países.</p>
+            </article>
+            <article>
+                <h3>Usar ecuaciones de medida de fifu para la cocina</h3>
+                <p>En la cocina, solemos encontrar diferentes sistemas de medición, y es crucial saber cómo convertir entre ellos para evitar errores. Por ejemplo, las recetas estadounidenses suelen usar tazas y onzas, mientras que en otras partes del mundo se prefieren los mililitros o gramos.</p>
+            </article>
+        </div>
+    </section>
+
+    <section id="nosotros">
+        <h2>Nosotros</h2>
+        <p>Somos un equipo de estudiantes apasionados por la ciencia y el mundo que nos rodea. Nos encanta investigar y compartir conocimientos de una forma accesible y divertida.</p>
+        <ul>
+            <li>Cristhian Chinchilla - Patron</li>
+            
+        </ul>
+    </section>
+
+    <section id="suscripcion">
+        <h2>Suscríbete</h2>
+        <p>¿Quieres estar al tanto de nuestras publicaciones? ¡Suscríbete aquí!</p>
+        <form action="https://forms.google.com">
+            <label for="email">Ramas@gmail.com:</label>
+            <input type="email" id="email" name="email" required>
+            <button type="submit">Suscribirme</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>© 2024 Ramas - Todos los derechos reservados.</p>
+    </footer>
+</body>
+</html>
